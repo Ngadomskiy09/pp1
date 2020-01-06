@@ -9,6 +9,11 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+require('functions.php');
+
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,5 +26,9 @@ error_reporting(E_ALL);
 </head>
 <body>
     <h1>Pair Program 1</h1>
+    <?php
+        printArr($numbers);
+    ?>
+
 </body>
 </html>
