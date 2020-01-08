@@ -13,7 +13,8 @@ function largest($array) {
             $max = $array[$i];
         }
     }
-    echo "<p>$max</p>";
+    echo "<p>largest number is: $max</p>";
+
 }
 
 function removeDups($array) {
@@ -32,4 +33,18 @@ function removeDups($array) {
     }
     echo "]";
 
+}
+
+function distribution($array) {
+    if(!empty($array)) {
+        $newArray = array();
+        for($i = 0; $i < count($array); $i++) {
+            if(!array_key_exists($array[$i], $newArray)) {
+                $newArray[$array[$i]] = 1;
+            } else {
+                $newArray[$array[$i]] = $newArray[$array[$i]] + 1;
+            }
+        }
+        return $newArray;
+    }
 }
