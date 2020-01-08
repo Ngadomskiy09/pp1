@@ -28,6 +28,8 @@ $numbers = array(7, 9, 8, 9, 8, 8, 6);
     <h1>Pair Program 1</h1>
     <?php
         printArr($numbers);
+        largest($numbers);
+        removeDups($numbers);
     ?>
 
 </body>
